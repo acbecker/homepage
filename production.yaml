@@ -1,0 +1,14 @@
+extends: site.yaml
+
+mode: production
+media_url: /users/becker/media
+base_url: /users/becker
+
+deploy_root: deploy_production
+
+publisher:
+    ssh:
+        type: hyde.ext.publishers.ssh.SSH
+        username: acbecker
+        server: portal.astro.washington.edu
+        target: /www/astro/users/becker/html
