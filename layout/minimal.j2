@@ -17,6 +17,7 @@
         in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="{{ media_url('favicon.ico') }}">
   <link rel="apple-touch-icon" href="{{ media_url('apple-touch-icon.png') }}">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   {% endblock favicons %}
 
   {% block css %}
@@ -81,6 +82,7 @@
         <p class="view"><a href="{{ content_url('create.html') }}">Create<small>Audio, Visual, Digital</small></a></p>
         <p class="view"><a href="dataRelease/">Data Releases<small>Find Published Data Here</small></a></p>
         <p class="view"><a href="{{ content_url('misc.html') }}">Miscellaneous<small>IMA championships, etc</small></a></p>
+
         {% if page.repository_url %}
           <h3>Project Info</h3>
           <ul>
@@ -105,11 +107,11 @@
 	  
 	{% block media %}
         <h3>On the Web</h3>
-        <p class="view"><a href="http://github.com/acbecker" target="tab" class="icon-github">GitHub<small>View my Projects, Papers, and Proposals</small></a></li>
-        <p class="view"><a href="http://www.linkedin.com/in/acbecker" target="tab" id="sidebar-linkedin" class="icon-linkedin-sign">LinkedIn<small>Professional Presence</small></a></li>
-        <p class="view"><a href="http://acbecker.github.io" target="tab" id="sidebar-github" class="icon-blog">Blog<small>Practical Astrophysics, Statistics, and Computer Science</small></a></li>
-        <p class="view"><a href="http://twitter.com/the__fog" target="tab" id="sidebar-twitter" class="icon-twitter">Twitter<small>Private</small></a></li>
-        <p class="view"><a href="http://profiles.google.com/acbecker" target="tab" class="icon-google-plus-sign">Google+<small>Underutilized</small></a></li>
+        <p class="view"><a href="http://github.com/acbecker" target="tab" class="icon-github"> GitHub<small>View my Projects, Papers, and Proposals</small></a></li>
+        <p class="view"><a href="http://www.linkedin.com/in/acbecker" target="tab" id="sidebar-linkedin" class="icon-linkedin-sign"> LinkedIn<small>Professional Presence</small></a></li>
+        <p class="view"><a href="http://acbecker.github.io" target="tab" id="sidebar-github" class="icon-cogs"> Blog<small>Astrophysics, Statistics, and Computer Science</small></a></li>
+        <p class="view"><a href="http://twitter.com/the__fog" target="tab" id="sidebar-twitter" class="icon-twitter"> Twitter<small>Private</small></a></li>
+        <p class="view"><a href="http://profiles.google.com/acbecker" target="tab" class="icon-google-plus-sign"> Google+<small>Underutilized</small></a></li>
         {% endblock media %}
       </header>
       <section id="main">
