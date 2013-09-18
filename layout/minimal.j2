@@ -82,6 +82,7 @@
         <p class="view"><a href="{{ content_url('create.html') }}">Create<small>Audio, Visual, Digital</small></a></p>
         <p class="view"><a href="dataRelease/">Data Releases<small>Find Published Data Here</small></a></p>
         <p class="view"><a href="{{ content_url('misc.html') }}">Miscellaneous<small>IMA championships, etc</small></a></p>
+        <p class="view"><a href="{{ content_url('contact.html') }}">Contact<small>Share Ideas</small></a></p>
 
         {% if page.repository_url %}
           <h3>Project Info</h3>
@@ -113,6 +114,7 @@
         <p class="view"><a href="http://twitter.com/the__fog" target="tab" id="sidebar-twitter" class="icon-twitter"> Twitter<small>Private</small></a></li>
         <p class="view"><a href="http://profiles.google.com/acbecker" target="tab" class="icon-google-plus-sign"> Google+<small>Underutilized</small></a></li>
         {% endblock media %}
+
       </header>
       <section id="main">
 	{% block main %}
@@ -133,6 +135,7 @@
 
     {% block js %}
     <script type="text/javascript">
+      <!--
       var _gauges = _gauges || [];
       (function() {
         var t   = document.createElement('script');
@@ -144,6 +147,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
+      -->
     </script>
     {% block jquery %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
